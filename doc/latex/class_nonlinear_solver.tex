@@ -1,0 +1,158 @@
+\hypertarget{class_nonlinear_solver}{
+\section{NonlinearSolver Class Reference}
+\label{class_nonlinear_solver}\index{NonlinearSolver@{NonlinearSolver}}
+}
+
+
+Inherits \hyperlink{class_linear_solver}{LinearSolver}, and \hyperlink{class_abstract}{Abstract}.
+
+Inherited by \hyperlink{class_continuer}{Continuer}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_nonlinear_solver_a0199c1755fe89dad01ea9855f22f32d4}{
+int {\bfseries setNoOfUnknownVar} (int n)}
+\label{class_nonlinear_solver_a0199c1755fe89dad01ea9855f22f32d4}
+
+\item 
+\hypertarget{class_nonlinear_solver_abb22c855c950b52df00301f5d5557d09}{
+int {\bfseries setNoOfUnknownVar} (int var, int eq)}
+\label{class_nonlinear_solver_abb22c855c950b52df00301f5d5557d09}
+
+\item 
+\hypertarget{class_nonlinear_solver_a053187f06cc0326b48504d9d50738fd8}{
+int {\bfseries setNoOfInArgs} (int n)}
+\label{class_nonlinear_solver_a053187f06cc0326b48504d9d50738fd8}
+
+\item 
+\hypertarget{class_nonlinear_solver_a0b04d8997db805338504584f400bd89b}{
+int {\bfseries F} (double $\ast$args, gsl\_\-vector $\ast$out)}
+\label{class_nonlinear_solver_a0b04d8997db805338504584f400bd89b}
+
+\item 
+\hypertarget{class_nonlinear_solver_aa501af12fe0e1c93a602f11d08b4f9d1}{
+int {\bfseries Jac} (double $\ast$args, gsl\_\-matrix $\ast$out)}
+\label{class_nonlinear_solver_aa501af12fe0e1c93a602f11d08b4f9d1}
+
+\item 
+\hypertarget{class_nonlinear_solver_afda0787a32bd2ba86dfc9398b6a2b2f2}{
+void {\bfseries predict} (double $\ast$args)}
+\label{class_nonlinear_solver_afda0787a32bd2ba86dfc9398b6a2b2f2}
+
+\item 
+\hypertarget{class_nonlinear_solver_ab25dbff2a16e19c28490180a59b96c05}{
+void {\bfseries correct} (double $\ast$args)}
+\label{class_nonlinear_solver_ab25dbff2a16e19c28490180a59b96c05}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_nonlinear_solver_a42821fa5d6a2858b4db398253c4f39e6}{
+const char $\ast$ {\bfseries predictorType}}
+\label{class_nonlinear_solver_a42821fa5d6a2858b4db398253c4f39e6}
+
+\item 
+\hypertarget{class_nonlinear_solver_a2d9d284abbd5cea1253dadfd86cb63ad}{
+const char $\ast$ {\bfseries correctorType}}
+\label{class_nonlinear_solver_a2d9d284abbd5cea1253dadfd86cb63ad}
+
+\item 
+\hypertarget{class_nonlinear_solver_a53df4399f000b620110f527c735e115f}{
+int {\bfseries noOfIterations}}
+\label{class_nonlinear_solver_a53df4399f000b620110f527c735e115f}
+
+\item 
+\hypertarget{class_nonlinear_solver_a97a6b5bf688afd2716d1753538d17908}{
+int {\bfseries maxIterations}}
+\label{class_nonlinear_solver_a97a6b5bf688afd2716d1753538d17908}
+
+\item 
+\hypertarget{class_nonlinear_solver_a676384f183bc62bbf024da8f6bf3d41e}{
+double {\bfseries tolerance}}
+\label{class_nonlinear_solver_a676384f183bc62bbf024da8f6bf3d41e}
+
+\item 
+\hypertarget{class_nonlinear_solver_acfef79f1d636989e16de0509e49186b1}{
+double {\bfseries eps}}
+\label{class_nonlinear_solver_acfef79f1d636989e16de0509e49186b1}
+
+\item 
+\hypertarget{class_nonlinear_solver_a5ac2e8cb7b86d30ef3ee3da3c123cbd5}{
+gsl\_\-vector $\ast$ {\bfseries tangent}}
+\label{class_nonlinear_solver_a5ac2e8cb7b86d30ef3ee3da3c123cbd5}
+
+\item 
+\hypertarget{class_nonlinear_solver_a0427f2d0ba15feba9cd9b0f53f8eb337}{
+double $\ast$ {\bfseries solution}}
+\label{class_nonlinear_solver_a0427f2d0ba15feba9cd9b0f53f8eb337}
+
+\item 
+\hypertarget{class_nonlinear_solver_ad81a0fc9158b5f27f8a8d4e3abbe23ce}{
+gsl\_\-matrix $\ast$ {\bfseries jacobian}}
+\label{class_nonlinear_solver_ad81a0fc9158b5f27f8a8d4e3abbe23ce}
+
+\item 
+\hypertarget{class_nonlinear_solver_a9cf9e79c131d8c2be66dea927ef12e36}{
+int {\bfseries noOfUnknownVar}}
+\label{class_nonlinear_solver_a9cf9e79c131d8c2be66dea927ef12e36}
+
+\item 
+\hypertarget{class_nonlinear_solver_ab3a2a023d3b6eeda51b8a94d264c593e}{
+int {\bfseries noOfEqs}}
+\label{class_nonlinear_solver_ab3a2a023d3b6eeda51b8a94d264c593e}
+
+\item 
+\hypertarget{class_nonlinear_solver_a81401117c357c6644bc895dc99541cbd}{
+int {\bfseries noOfInArgs}}
+\label{class_nonlinear_solver_a81401117c357c6644bc895dc99541cbd}
+
+\item 
+\hypertarget{class_nonlinear_solver_a9aceef08ce74ef21a22caf7b056a1879}{
+int($\ast$ {\bfseries ptr\_\-F} )(double $\ast$, double $\ast$, gsl\_\-vector $\ast$)}
+\label{class_nonlinear_solver_a9aceef08ce74ef21a22caf7b056a1879}
+
+\item 
+\hypertarget{class_nonlinear_solver_afbbef31be99e0599b2e2f683cdd33a7a}{
+int {\bfseries noOfIndVar}}
+\label{class_nonlinear_solver_afbbef31be99e0599b2e2f683cdd33a7a}
+
+\item 
+\hypertarget{class_nonlinear_solver_a01af1c10fa4653752603d742ff568b3e}{
+double $\ast$ {\bfseries indVar}}
+\label{class_nonlinear_solver_a01af1c10fa4653752603d742ff568b3e}
+
+\item 
+\hypertarget{class_nonlinear_solver_a6ec00b66d80a98dffb992724aceb7cf1}{
+int($\ast$ {\bfseries ptr\_\-Jac} )(double $\ast$args, gsl\_\-matrix $\ast$out)}
+\label{class_nonlinear_solver_a6ec00b66d80a98dffb992724aceb7cf1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_nonlinear_solver_a59db119f6172a01055eccc1872507370}{
+void {\bfseries quasiNewtonMethod} (double $\ast$args)}
+\label{class_nonlinear_solver_a59db119f6172a01055eccc1872507370}
+
+\item 
+\hypertarget{class_nonlinear_solver_a21e13c00546625acce62ef575271335d}{
+void {\bfseries newtonMethod} (double $\ast$args)}
+\label{class_nonlinear_solver_a21e13c00546625acce62ef575271335d}
+
+\item 
+\hypertarget{class_nonlinear_solver_a0eb83cedf5f8e5713fd28bf7f9061bdf}{
+void {\bfseries array2vector} (double $\ast$, gsl\_\-vector $\ast$)}
+\label{class_nonlinear_solver_a0eb83cedf5f8e5713fd28bf7f9061bdf}
+
+\item 
+\hypertarget{class_nonlinear_solver_a1211c097ec581a5ef6a272641ad3b88c}{
+void {\bfseries vector2array} (gsl\_\-vector $\ast$, double $\ast$)}
+\label{class_nonlinear_solver_a1211c097ec581a5ef6a272641ad3b88c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Applications/Gauge/continuation/continuation.h\item 
+/u/home/s/sanjaydm/voom2/src/Applications/Gauge/continuation/continuation.cpp\end{DoxyCompactItemize}

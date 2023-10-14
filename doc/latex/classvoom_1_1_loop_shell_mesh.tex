@@ -1,0 +1,68 @@
+\hypertarget{classvoom_1_1_loop_shell_mesh}{
+\section{voom::LoopShellMesh Class Reference}
+\label{classvoom_1_1_loop_shell_mesh}\index{voom::LoopShellMesh@{voom::LoopShellMesh}}
+}
+
+
+Inherits \hyperlink{classvoom_1_1_mesh}{voom::Mesh}.\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_loop_shell_mesh_a9ee7b059ee20c2329cdb525e480f9134}{
+typedef Eigen::Vector3i {\bfseries TriangleConnectivity}}
+\label{classvoom_1_1_loop_shell_mesh_a9ee7b059ee20c2329cdb525e480f9134}
+
+\item 
+\hypertarget{classvoom_1_1_loop_shell_mesh_a87b99bfc516f3e1df45ab3f9de23f68c}{
+typedef std::vector$<$ int $>$ {\bfseries CornerValences}}
+\label{classvoom_1_1_loop_shell_mesh_a87b99bfc516f3e1df45ab3f9de23f68c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_loop_shell_mesh_af08df0ac38084028572bd3fac7cc7798}{
+\hyperlink{classvoom_1_1_loop_shell_mesh_af08df0ac38084028572bd3fac7cc7798}{LoopShellMesh} (const string Nodes, const string ConnTable)}
+\label{classvoom_1_1_loop_shell_mesh_af08df0ac38084028572bd3fac7cc7798}
+
+\begin{DoxyCompactList}\small\item\em Constructor from input file. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classvoom_1_1_loop_shell_mesh_a5e541b0fc9ac4261737825a41e45f01c}{$\sim$LoopShellMesh} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_loop_shell_mesh_ae0cdc92042d439bc33a7b1aee29b5196}{
+void {\bfseries initializeMesh} (vector$<$ TriangleConnectivity $>$ \&connectivities)}
+\label{classvoom_1_1_loop_shell_mesh_ae0cdc92042d439bc33a7b1aee29b5196}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ CornerValences,vector$<$ \hyperlink{classvoom_1_1_loop_shell_shape}{LoopShellShape} $\ast$ $>$ $>$ \hyperlink{classvoom_1_1_loop_shell_mesh_a95466b793ea0a50b017483aac2b4bfcd}{\_\-shapes}
+\item 
+\hypertarget{classvoom_1_1_loop_shell_mesh_ad899b5348b7003dafa41cfd9836ae651}{
+\hyperlink{classvoom_1_1_quadrature}{Quadrature} $\ast$ \hyperlink{classvoom_1_1_loop_shell_mesh_ad899b5348b7003dafa41cfd9836ae651}{\_\-quadrature}}
+\label{classvoom_1_1_loop_shell_mesh_ad899b5348b7003dafa41cfd9836ae651}
+
+\begin{DoxyCompactList}\small\item\em One \hyperlink{classvoom_1_1_quadrature}{Quadrature} rule per each element type. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvoom_1_1_loop_shell_mesh_a5e541b0fc9ac4261737825a41e45f01c}{
+\index{voom::LoopShellMesh@{voom::LoopShellMesh}!$\sim$LoopShellMesh@{$\sim$LoopShellMesh}}
+\index{$\sim$LoopShellMesh@{$\sim$LoopShellMesh}!voom::LoopShellMesh@{voom::LoopShellMesh}}
+\subsubsection[{$\sim$LoopShellMesh}]{\setlength{\rightskip}{0pt plus 5cm}virtual voom::LoopShellMesh::$\sim$LoopShellMesh ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classvoom_1_1_loop_shell_mesh_a5e541b0fc9ac4261737825a41e45f01c}
+
+
+Destructor. Constructor from nodes and connectivities (assume only one type of elements and quadrature in one mesh) 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvoom_1_1_loop_shell_mesh_a95466b793ea0a50b017483aac2b4bfcd}{
+\index{voom::LoopShellMesh@{voom::LoopShellMesh}!\_\-shapes@{\_\-shapes}}
+\index{\_\-shapes@{\_\-shapes}!voom::LoopShellMesh@{voom::LoopShellMesh}}
+\subsubsection[{\_\-shapes}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ CornerValences ,vector$<${\bf LoopShellShape}$\ast$$>$ $>$ {\bf voom::LoopShellMesh::\_\-shapes}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_loop_shell_mesh_a95466b793ea0a50b017483aac2b4bfcd}
+Map of shape objects The integer key is the Valence corresponding to a regular or an irregular patch. The value stored is a vector of type Shape$\ast$. Each entry of the vector is the shape functions at a quadrature point 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Mesh/LoopShellMesh.h\item 
+/u/home/s/sanjaydm/voom2/src/Mesh/LoopShellMesh.cc\end{DoxyCompactItemize}

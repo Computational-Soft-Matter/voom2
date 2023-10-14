@@ -1,0 +1,15 @@
+Lambda = 10
+Sigma =  2*sqrt(4.0/12); epsilonLJ=1
+No reduced volume constraint.
+Projected gradient less than 1e-4.
+Kappa decreased from 1 to 0.05 in increments of 0.05
+So,
+N12_kappa1_lambda20_0 corresponds to kappa=1
+N12_kappa1_lambda20_1 corresponds to kappa=0.95
+N12_kappa1_lambda20_2 corresponds to kappa=0.90
+.
+.
+.
+N12_kappa1_lambda20_10 corresponds to kappa=0.05
+
+Since the states were computed using "sort-of" numerical continuation (i.e., use previous state as guess for new state), icosahedral symmetry has been maintained even for small kappa. This is most likely a meta stable state.

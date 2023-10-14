@@ -1,0 +1,72 @@
+\hypertarget{classvoom_1_1_f_egeom_element}{
+\section{voom::FEgeomElement Class Reference}
+\label{classvoom_1_1_f_egeom_element}\index{voom::FEgeomElement@{voom::FEgeomElement}}
+}
+
+
+Inherits \hyperlink{classvoom_1_1_geom_element}{voom::GeomElement}.
+
+Inherited by \hyperlink{classvoom_1_1_loop_shell_element}{voom::LoopShellElement}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_f_egeom_element_a13005c4ebd13547328c665e0413a6e35}{
+{\bfseries FEgeomElement} (const int elemID, const vector$<$ int $>$ \&nodesID, const vector$<$ VectorXd $>$ \&nodesX, vector$<$ \hyperlink{classvoom_1_1_shape}{Shape} $\ast$ $>$ shape, \hyperlink{classvoom_1_1_quadrature}{Quadrature} $\ast$quadrature)}
+\label{classvoom_1_1_f_egeom_element_a13005c4ebd13547328c665e0413a6e35}
+
+\item 
+\hypertarget{classvoom_1_1_f_egeom_element_adf498f0f8525df179f59c4d0771f5b1e}{
+{\bfseries FEgeomElement} (const int elemID, const vector$<$ int $>$ \&nodesID)}
+\label{classvoom_1_1_f_egeom_element_adf498f0f8525df179f59c4d0771f5b1e}
+
+\item 
+\hypertarget{classvoom_1_1_f_egeom_element_a21f4d5b22a360433f015a8f3201117cb}{
+uint \hyperlink{classvoom_1_1_f_egeom_element_a21f4d5b22a360433f015a8f3201117cb}{getNumberOfQuadPoints} ()}
+\label{classvoom_1_1_f_egeom_element_a21f4d5b22a360433f015a8f3201117cb}
+
+\begin{DoxyCompactList}\small\item\em Get number of quadrature points. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_f_egeom_element_aeae0bbf47871f9271eacb5f570949cfb}{
+Real \hyperlink{classvoom_1_1_f_egeom_element_aeae0bbf47871f9271eacb5f570949cfb}{getQPweights} (uint q)}
+\label{classvoom_1_1_f_egeom_element_aeae0bbf47871f9271eacb5f570949cfb}
+
+\begin{DoxyCompactList}\small\item\em Get weight for quadrature point q. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_f_egeom_element_a8411a573d378724bfdbdc19f18cb63ee}{
+Real \hyperlink{classvoom_1_1_f_egeom_element_a8411a573d378724bfdbdc19f18cb63ee}{getN} (uint q, uint a)}
+\label{classvoom_1_1_f_egeom_element_a8411a573d378724bfdbdc19f18cb63ee}
+
+\begin{DoxyCompactList}\small\item\em Get shape functions values at quadrature point q, node a. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_f_egeom_element_a0f55891efa8658fa3a66d7c0d69fb40e}{
+Real \hyperlink{classvoom_1_1_f_egeom_element_a0f55891efa8658fa3a66d7c0d69fb40e}{getDN} (uint q, uint a, uint i)}
+\label{classvoom_1_1_f_egeom_element_a0f55891efa8658fa3a66d7c0d69fb40e}
+
+\begin{DoxyCompactList}\small\item\em Get shape functions derivatives at quadrature point q, node a, direction i. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_f_egeom_element_aa2f4225cec59380dfc9735bb68fc2e9a}{
+vector$<$ Real $>$ \hyperlink{classvoom_1_1_f_egeom_element_aa2f4225cec59380dfc9735bb68fc2e9a}{\_\-QPweights}}
+\label{classvoom_1_1_f_egeom_element_aa2f4225cec59380dfc9735bb68fc2e9a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classvoom_1_1_quadrature}{Quadrature} weights. \item\end{DoxyCompactList}\item 
+vector$<$ Real $>$ \hyperlink{classvoom_1_1_f_egeom_element_a944e0317c44621247dc303eecbc1b43f}{\_\-N}
+\item 
+vector$<$ VectorXd $>$ \hyperlink{classvoom_1_1_f_egeom_element_a1dd12a09866e90fe8738bcea2267a835}{\_\-DN}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvoom_1_1_f_egeom_element_a1dd12a09866e90fe8738bcea2267a835}{
+\index{voom::FEgeomElement@{voom::FEgeomElement}!\_\-DN@{\_\-DN}}
+\index{\_\-DN@{\_\-DN}!voom::FEgeomElement@{voom::FEgeomElement}}
+\subsubsection[{\_\-DN}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$VectorXd $>$ {\bf voom::FEgeomElement::\_\-DN}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_f_egeom_element_a1dd12a09866e90fe8738bcea2267a835}
+\hyperlink{classvoom_1_1_shape}{Shape} functions derivatives values at quadrature points (Each entry corresponds to a node, different quadrature points are stored subsequently) \hypertarget{classvoom_1_1_f_egeom_element_a944e0317c44621247dc303eecbc1b43f}{
+\index{voom::FEgeomElement@{voom::FEgeomElement}!\_\-N@{\_\-N}}
+\index{\_\-N@{\_\-N}!voom::FEgeomElement@{voom::FEgeomElement}}
+\subsubsection[{\_\-N}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Real $>$ {\bf voom::FEgeomElement::\_\-N}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_f_egeom_element_a944e0317c44621247dc303eecbc1b43f}
+\hyperlink{classvoom_1_1_shape}{Shape} functions values at quadrature points (Each entry corresponds to a node, different quadrature points are stored subsequently) 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Element/\hyperlink{_f_egeom_element_8h}{FEgeomElement.h}\item 
+/u/home/s/sanjaydm/voom2/src/Element/FEgeomElement.cc\end{DoxyCompactItemize}

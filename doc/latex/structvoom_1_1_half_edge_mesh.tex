@@ -1,0 +1,57 @@
+\hypertarget{structvoom_1_1_half_edge_mesh}{
+\section{voom::HalfEdgeMesh Struct Reference}
+\label{structvoom_1_1_half_edge_mesh}\index{voom::HalfEdgeMesh@{voom::HalfEdgeMesh}}
+}
+
+
+\hyperlink{structvoom_1_1_half_edge}{HalfEdge} data structure to store a triangle mesh.  
+
+
+{\ttfamily \#include $<$HalfEdgeMesh.h$>$}\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_a606d2e2f8d6e6c6357befe3b20c0d3d2}{
+typedef Eigen::Vector3i \hyperlink{structvoom_1_1_half_edge_mesh_a606d2e2f8d6e6c6357befe3b20c0d3d2}{TriangleConnectivity}}
+\label{structvoom_1_1_half_edge_mesh_a606d2e2f8d6e6c6357befe3b20c0d3d2}
+
+\begin{DoxyCompactList}\small\item\em Connectivity of a single triangle. \item\end{DoxyCompactList}\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_a8009170d97788692c1451db0123acf3e}{
+typedef std::vector$<$ \hyperlink{structvoom_1_1_half_edge_mesh_a606d2e2f8d6e6c6357befe3b20c0d3d2}{TriangleConnectivity} $>$ \hyperlink{structvoom_1_1_half_edge_mesh_a8009170d97788692c1451db0123acf3e}{ConnectivityContainer}}
+\label{structvoom_1_1_half_edge_mesh_a8009170d97788692c1451db0123acf3e}
+
+\begin{DoxyCompactList}\small\item\em Container of connectivities for a mesh of triangles. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_ab179b9dd9b646298f7e5afc9c4af5a97}{
+{\bfseries HalfEdgeMesh} (const \hyperlink{structvoom_1_1_half_edge_mesh_a8009170d97788692c1451db0123acf3e}{ConnectivityContainer} \&connectivities, int nVertices)}
+\label{structvoom_1_1_half_edge_mesh_ab179b9dd9b646298f7e5afc9c4af5a97}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_a9c3212ff4158e8360b00373cf952e54e}{
+std::vector$<$ \hyperlink{structvoom_1_1_half_edge}{HalfEdge} $\ast$ $>$ {\bfseries halfEdges}}
+\label{structvoom_1_1_half_edge_mesh_a9c3212ff4158e8360b00373cf952e54e}
+
+\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_afb358e2280d947af731fac89bb4ab6a7}{
+std::vector$<$ \hyperlink{structvoom_1_1_face}{Face} $\ast$ $>$ {\bfseries faces}}
+\label{structvoom_1_1_half_edge_mesh_afb358e2280d947af731fac89bb4ab6a7}
+
+\item 
+\hypertarget{structvoom_1_1_half_edge_mesh_aa3917972301fdcc70fe7ed6d8657134d}{
+std::vector$<$ \hyperlink{structvoom_1_1_vertex}{Vertex} $\ast$ $>$ {\bfseries vertices}}
+\label{structvoom_1_1_half_edge_mesh_aa3917972301fdcc70fe7ed6d8657134d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structvoom_1_1_half_edge}{HalfEdge} data structure to store a triangle mesh. This class is built to convert a connectivity array into a \hyperlink{structvoom_1_1_half_edge}{HalfEdge} data structure. 
+
+The documentation for this struct was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/HalfEdgeMesh/HalfEdgeMesh.h\item 
+/u/home/s/sanjaydm/voom2/src/HalfEdgeMesh/HalfEdgeMesh.cc\end{DoxyCompactItemize}

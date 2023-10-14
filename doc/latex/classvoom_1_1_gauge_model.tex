@@ -1,0 +1,143 @@
+\hypertarget{classvoom_1_1_gauge_model}{
+\section{voom::GaugeModel Class Reference}
+\label{classvoom_1_1_gauge_model}\index{voom::GaugeModel@{voom::GaugeModel}}
+}
+
+
+Inherits \hyperlink{classvoom_1_1_elliptic_model}{voom::EllipticModel}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvoom_1_1_gauge_model_a3396f08fc7d07e6a0bec056a30cc955d}{GaugeModel} (\hyperlink{classvoom_1_1_mesh}{Mesh} $\ast$aMesh, vector$<$ \hyperlink{classvoom_1_1_gauge_lipid}{GaugeLipid} $\ast$ $>$ \hyperlink{classvoom_1_1_gauge_model_a68fb6771675d320ae7e850b09fb487e4}{\_\-materials}, const uint NodeDoF)
+\begin{DoxyCompactList}\small\item\em Basic Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classvoom_1_1_gauge_model_ad12784e32ca359d0e12d472c7c4513ee}{$\sim$GaugeModel} ()
+\begin{DoxyCompactList}\small\item\em Input-\/file-\/based Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_ace2ffdc65841a4111185be468c252cc2}{
+void \hyperlink{classvoom_1_1_gauge_model_ace2ffdc65841a4111185be468c252cc2}{initializeField} (const Real value=1.0)}
+\label{classvoom_1_1_gauge_model_ace2ffdc65841a4111185be468c252cc2}
+
+\begin{DoxyCompactList}\small\item\em Initialize field. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_ad6b74547887af1de4bd7bcca0c6f1cc6}{
+void \hyperlink{classvoom_1_1_gauge_model_ad6b74547887af1de4bd7bcca0c6f1cc6}{initializeField} (const Real $\ast$value)}
+\label{classvoom_1_1_gauge_model_ad6b74547887af1de4bd7bcca0c6f1cc6}
+
+\begin{DoxyCompactList}\small\item\em From array. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_a20a78ea7555787a8728ee60776011a36}{
+void \hyperlink{classvoom_1_1_gauge_model_a20a78ea7555787a8728ee60776011a36}{linearizedUpdate} (const Real $\ast$localValues, Real fact)}
+\label{classvoom_1_1_gauge_model_a20a78ea7555787a8728ee60776011a36}
+
+\begin{DoxyCompactList}\small\item\em Linearized update. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_a08d83ad49c05e70b46113ef769b99c98}{
+void {\bfseries linearizedUpdate} (const int id, const int dof, const Real value)}
+\label{classvoom_1_1_gauge_model_a08d83ad49c05e70b46113ef769b99c98}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_ab2e9e1828d50d53998e13852a0df2425}{
+void {\bfseries linearizedUpdate} (const int dof, const Real value)}
+\label{classvoom_1_1_gauge_model_ab2e9e1828d50d53998e13852a0df2425}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_a012169855afaf5a1841d25fa5f1d252b}{
+void {\bfseries setField} (uint dof, Real value)}
+\label{classvoom_1_1_gauge_model_a012169855afaf5a1841d25fa5f1d252b}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_a351b9af0145f76e85aa6b8167d9f82bf}{
+void {\bfseries setField} (const Real $\ast$value)}
+\label{classvoom_1_1_gauge_model_a351b9af0145f76e85aa6b8167d9f82bf}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_aa160275f701f51d43e817c04d285ef52}{
+void {\bfseries getField} (vector$<$ double $>$ \&x)}
+\label{classvoom_1_1_gauge_model_aa160275f701f51d43e817c04d285ef52}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_afd509c41cd2f36b97a3a52fc92ba256d}{
+void {\bfseries setPrevField} ()}
+\label{classvoom_1_1_gauge_model_afd509c41cd2f36b97a3a52fc92ba256d}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_a6fd135370b1b72876998947dbceb2227}{
+void {\bfseries printField} ()}
+\label{classvoom_1_1_gauge_model_a6fd135370b1b72876998947dbceb2227}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_af7a7f5dbbf3ca9e9c4614d8837d8215e}{
+void {\bfseries writeField} (string FileName)}
+\label{classvoom_1_1_gauge_model_af7a7f5dbbf3ca9e9c4614d8837d8215e}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_a40c5984b59544fcc03d0abd3e0354e62}{
+uint \hyperlink{classvoom_1_1_gauge_model_a40c5984b59544fcc03d0abd3e0354e62}{getNumMat} ()}
+\label{classvoom_1_1_gauge_model_a40c5984b59544fcc03d0abd3e0354e62}
+
+\begin{DoxyCompactList}\small\item\em Return number of unique material pointers. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_a6f7c842df251c1973ea627360d09edc2}{
+uint {\bfseries getTotNumMatProp} ()}
+\label{classvoom_1_1_gauge_model_a6f7c842df251c1973ea627360d09edc2}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_a89aa4c3bf7114d84c42a58ce527b5d25}{
+vector$<$ \hyperlink{classvoom_1_1_gauge_lipid}{GaugeLipid} $\ast$ $>$ {\bfseries getMaterials} ()}
+\label{classvoom_1_1_gauge_model_a89aa4c3bf7114d84c42a58ce527b5d25}
+
+\item 
+\hypertarget{classvoom_1_1_gauge_model_afbb8fb2f7dd919c8d2082f85a2062033}{
+void \hyperlink{classvoom_1_1_gauge_model_afbb8fb2f7dd919c8d2082f85a2062033}{writeOutputVTK} (const string OutputFile, int step)}
+\label{classvoom_1_1_gauge_model_afbb8fb2f7dd919c8d2082f85a2062033}
+
+\begin{DoxyCompactList}\small\item\em Write output. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_gauge_model_a831e2c32bc321c1b0ad1aa12e01806a1}{
+void \hyperlink{classvoom_1_1_gauge_model_a831e2c32bc321c1b0ad1aa12e01806a1}{compute} (\hyperlink{structvoom_1_1_elliptic_result}{EllipticResult} \&R)}
+\label{classvoom_1_1_gauge_model_a831e2c32bc321c1b0ad1aa12e01806a1}
+
+\begin{DoxyCompactList}\small\item\em Solve the system. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classvoom_1_1_gauge_lipid}{GaugeLipid} $\ast$ $>$ \hyperlink{classvoom_1_1_gauge_model_a68fb6771675d320ae7e850b09fb487e4}{\_\-materials}
+\begin{DoxyCompactList}\small\item\em Compute Gradients. \item\end{DoxyCompactList}\item 
+vector$<$ Real $>$ \hyperlink{classvoom_1_1_gauge_model_a1d12d980a564a66d76235b3bc8e3eb5c}{\_\-field}
+\item 
+\hypertarget{classvoom_1_1_gauge_model_af33a0ce01ac695807ad60cd15a682b9f}{
+vector$<$ Real $>$ {\bfseries \_\-prevField}}
+\label{classvoom_1_1_gauge_model_af33a0ce01ac695807ad60cd15a682b9f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classvoom_1_1_gauge_model_a3396f08fc7d07e6a0bec056a30cc955d}{
+\index{voom::GaugeModel@{voom::GaugeModel}!GaugeModel@{GaugeModel}}
+\index{GaugeModel@{GaugeModel}!voom::GaugeModel@{voom::GaugeModel}}
+\subsubsection[{GaugeModel}]{\setlength{\rightskip}{0pt plus 5cm}voom::GaugeModel::GaugeModel ({\bf Mesh} $\ast$ {\em aMesh}, \/  vector$<$ {\bf GaugeLipid} $\ast$ $>$ {\em \_\-materials}, \/  const uint {\em NodeDoF})}}
+\label{classvoom_1_1_gauge_model_a3396f08fc7d07e6a0bec056a30cc955d}
+
+
+Basic Constructor. Construct from basic data structures defining the mesh, materials, BCs. \hypertarget{classvoom_1_1_gauge_model_ad12784e32ca359d0e12d472c7c4513ee}{
+\index{voom::GaugeModel@{voom::GaugeModel}!$\sim$GaugeModel@{$\sim$GaugeModel}}
+\index{$\sim$GaugeModel@{$\sim$GaugeModel}!voom::GaugeModel@{voom::GaugeModel}}
+\subsubsection[{$\sim$GaugeModel}]{\setlength{\rightskip}{0pt plus 5cm}voom::GaugeModel::$\sim$GaugeModel ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classvoom_1_1_gauge_model_ad12784e32ca359d0e12d472c7c4513ee}
+
+
+Input-\/file-\/based Constructor. Destructor 
+
+\subsection{Member Data Documentation}
+\hypertarget{classvoom_1_1_gauge_model_a1d12d980a564a66d76235b3bc8e3eb5c}{
+\index{voom::GaugeModel@{voom::GaugeModel}!\_\-field@{\_\-field}}
+\index{\_\-field@{\_\-field}!voom::GaugeModel@{voom::GaugeModel}}
+\subsubsection[{\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Real $>$ {\bf voom::GaugeModel::\_\-field}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_gauge_model_a1d12d980a564a66d76235b3bc8e3eb5c}
+Solution value at all nodes, local and ghost Displacement are stored unrolled, \mbox{[}phi\_\-x, phi\_\-y, phi\_\-z\mbox{]} \hypertarget{classvoom_1_1_gauge_model_a68fb6771675d320ae7e850b09fb487e4}{
+\index{voom::GaugeModel@{voom::GaugeModel}!\_\-materials@{\_\-materials}}
+\index{\_\-materials@{\_\-materials}!voom::GaugeModel@{voom::GaugeModel}}
+\subsubsection[{\_\-materials}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf GaugeLipid} $\ast$ $>$ {\bf voom::GaugeModel::\_\-materials}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_gauge_model_a68fb6771675d320ae7e850b09fb487e4}
+
+
+Compute Gradients. List of Material data at each element in the model 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Model/GaugeModel.h\item 
+/u/home/s/sanjaydm/voom2/src/Model/GaugeModel.cc\end{DoxyCompactItemize}

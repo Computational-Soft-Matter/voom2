@@ -1,0 +1,112 @@
+\hypertarget{classvoom_1_1_s_c_elastic}{
+\section{voom::SCElastic Class Reference}
+\label{classvoom_1_1_s_c_elastic}\index{voom::SCElastic@{voom::SCElastic}}
+}
+
+
+{\ttfamily \#include $<$SCElastic.h$>$}
+
+Inherits \hyperlink{classvoom_1_1_shell_material}{voom::ShellMaterial}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a6a9371f1418cb284e22ff450c338c0f7}{
+{\bfseries SCElastic} (const double kC, const double kG, const double C0=0.0)}
+\label{classvoom_1_1_s_c_elastic_a6a9371f1418cb284e22ff450c338c0f7}
+
+\item 
+void \hyperlink{classvoom_1_1_s_c_elastic_ab492944d398efffa67fa3763a1cbd7fc}{compute} (\hyperlink{structvoom_1_1_shell_material_1_1_shellresults}{Shellresults} \&R, const \hyperlink{classvoom_1_1_shell_geometry}{ShellGeometry} \&defGeom)
+\begin{DoxyCompactList}\small\item\em Clone. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a159983a24bc5761e4623a969cbfff9b2}{
+double {\bfseries meanCurvature} () const }
+\label{classvoom_1_1_s_c_elastic_a159983a24bc5761e4623a969cbfff9b2}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a9858a77a638480511f51cb5bb47378e5}{
+double {\bfseries gaussianCurvature} () const }
+\label{classvoom_1_1_s_c_elastic_a9858a77a638480511f51cb5bb47378e5}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a74dcbe37b0b5a016f988f3b9bafcb77c}{
+double {\bfseries spontaneousCurvature} () const }
+\label{classvoom_1_1_s_c_elastic_a74dcbe37b0b5a016f988f3b9bafcb77c}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_ab076aa8998ccd456ac0d7f84d5eb3a43}{
+double {\bfseries bendingModulus} () const }
+\label{classvoom_1_1_s_c_elastic_ab076aa8998ccd456ac0d7f84d5eb3a43}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a2ebdf0f150e975475e34781ee908c438}{
+double {\bfseries gaussianModulus} () const }
+\label{classvoom_1_1_s_c_elastic_a2ebdf0f150e975475e34781ee908c438}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a1e6bc7f6e0e7bd175e1721abd87e78cc}{
+void \hyperlink{classvoom_1_1_s_c_elastic_a1e6bc7f6e0e7bd175e1721abd87e78cc}{setMaterialParameters} (const vector$<$ Real $>$ \&)}
+\label{classvoom_1_1_s_c_elastic_a1e6bc7f6e0e7bd175e1721abd87e78cc}
+
+\begin{DoxyCompactList}\small\item\em SetMaterialParameters function. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a7c3bf1d771e4242f54622902312be09e}{
+void {\bfseries setInternalParameters} (const vector$<$ Real $>$ \&)}
+\label{classvoom_1_1_s_c_elastic_a7c3bf1d771e4242f54622902312be09e}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a2d6dcfee664162af7ae034f7c2e5605b}{
+vector$<$ Real $>$ \hyperlink{classvoom_1_1_s_c_elastic_a2d6dcfee664162af7ae034f7c2e5605b}{getMaterialParameters} ()}
+\label{classvoom_1_1_s_c_elastic_a2d6dcfee664162af7ae034f7c2e5605b}
+
+\begin{DoxyCompactList}\small\item\em GetMaterialParameters function. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a7bafe4bd91ba6ec2236bdfb437086177}{
+vector$<$ Real $>$ {\bfseries getInternalParameters} ()}
+\label{classvoom_1_1_s_c_elastic_a7bafe4bd91ba6ec2236bdfb437086177}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_ab15c9f9fd2e030c3c6c911a95113f795}{
+double {\bfseries \_\-kC}}
+\label{classvoom_1_1_s_c_elastic_ab15c9f9fd2e030c3c6c911a95113f795}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_aa52a5d66c3d562b506e8e7b248bce9c4}{
+double {\bfseries \_\-kG}}
+\label{classvoom_1_1_s_c_elastic_aa52a5d66c3d562b506e8e7b248bce9c4}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a37cc05ae1cb6bb052b7d863950caf3d2}{
+double {\bfseries \_\-C0}}
+\label{classvoom_1_1_s_c_elastic_a37cc05ae1cb6bb052b7d863950caf3d2}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a12ec4b008b7080a376a590b7479d37c8}{
+double {\bfseries \_\-H}}
+\label{classvoom_1_1_s_c_elastic_a12ec4b008b7080a376a590b7479d37c8}
+
+\item 
+\hypertarget{classvoom_1_1_s_c_elastic_a688c8421fa666ca504c0c3273b25cd68}{
+double {\bfseries \_\-K}}
+\label{classvoom_1_1_s_c_elastic_a688c8421fa666ca504c0c3273b25cd68}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class implementing the simple Helfrich spontaneous curvature model for an elastic lipid bilayer. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classvoom_1_1_s_c_elastic_ab492944d398efffa67fa3763a1cbd7fc}{
+\index{voom::SCElastic@{voom::SCElastic}!compute@{compute}}
+\index{compute@{compute}!voom::SCElastic@{voom::SCElastic}}
+\subsubsection[{compute}]{\setlength{\rightskip}{0pt plus 5cm}void voom::SCElastic::compute ({\bf Shellresults} \& {\em R}, \/  const {\bf ShellGeometry} \& {\em defGeom})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classvoom_1_1_s_c_elastic_ab492944d398efffa67fa3763a1cbd7fc}
+
+
+Clone. Compute function 
+
+Implements \hyperlink{classvoom_1_1_shell_material_a959c8ad040d53a39218a7dbe6258472d}{voom::ShellMaterial}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Material/SCElastic.h\item 
+/u/home/s/sanjaydm/voom2/src/Material/SCElastic.cc\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+*.vtu
+*.vtk
+*.o
+*.deps
+*.in
+*.a
+*Makefile
+*.cmd
+*.output.*
+*.joblog.*
+*~
+*.swp
+./configure
+./doc/html/*
+./doc/latex/*
+./install-sh
+./missing
+./depcomp
+./config.status
+autom4te.cache/*
+src/Applications/Loop_Memb_Particle/todel\ data/

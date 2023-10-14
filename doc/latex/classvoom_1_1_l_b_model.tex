@@ -1,0 +1,181 @@
+\hypertarget{classvoom_1_1_l_b_model}{
+\section{voom::LBModel Class Reference}
+\label{classvoom_1_1_l_b_model}\index{voom::LBModel@{voom::LBModel}}
+}
+
+
+Inherits \hyperlink{classvoom_1_1_elliptic_model}{voom::EllipticModel}.\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_l_b_model_abb5d9a1b8ad83a5a16adf5f8b6fd91bc}{
+{\bfseries LBModel} (\hyperlink{classvoom_1_1_mesh}{Mesh} $\ast$aMesh, vector$<$ \hyperlink{classvoom_1_1_landau_brazovskii}{LandauBrazovskii} $\ast$ $>$ \hyperlink{classvoom_1_1_l_b_model_a7bb53d098be6d2d501b8b9c7914f07d6}{\_\-materials}, const uint NodeDoF, string ghostBCfilename1, string ghostBCfilename2, string boundaryFilename)}
+\label{classvoom_1_1_l_b_model_abb5d9a1b8ad83a5a16adf5f8b6fd91bc}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_aa589083d7513e8516c3ee385aeca3929}{
+void \hyperlink{classvoom_1_1_l_b_model_aa589083d7513e8516c3ee385aeca3929}{initializeField} (const Real value)}
+\label{classvoom_1_1_l_b_model_aa589083d7513e8516c3ee385aeca3929}
+
+\begin{DoxyCompactList}\small\item\em Initialize field. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a6e5f0d96cd34cec0b872c9a59a9f50be}{
+void {\bfseries initializeField} ()}
+\label{classvoom_1_1_l_b_model_a6e5f0d96cd34cec0b872c9a59a9f50be}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_aa171a0b1291cf9bb970e1ea0b45c2865}{
+void \hyperlink{classvoom_1_1_l_b_model_aa171a0b1291cf9bb970e1ea0b45c2865}{initializeField} (const Real $\ast$value)}
+\label{classvoom_1_1_l_b_model_aa171a0b1291cf9bb970e1ea0b45c2865}
+
+\begin{DoxyCompactList}\small\item\em From array. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a83d3423b69f41d24b241fd70ddab0fd1}{
+void \hyperlink{classvoom_1_1_l_b_model_a83d3423b69f41d24b241fd70ddab0fd1}{linearizedUpdate} (const Real $\ast$localValues, Real fact)}
+\label{classvoom_1_1_l_b_model_a83d3423b69f41d24b241fd70ddab0fd1}
+
+\begin{DoxyCompactList}\small\item\em Linearized update. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a55fa144f27472b376293a8aa0a537ddc}{
+void {\bfseries linearizedUpdate} (const int id, const int dof, const Real value)}
+\label{classvoom_1_1_l_b_model_a55fa144f27472b376293a8aa0a537ddc}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_acbe155affa8540032f389c3feb633ec1}{
+void {\bfseries linearizedUpdate} (const int dof, const Real value)}
+\label{classvoom_1_1_l_b_model_acbe155affa8540032f389c3feb633ec1}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a86f401fee7322d5b026bb40ad4b2b84b}{
+void {\bfseries setField} (uint dof, Real value)}
+\label{classvoom_1_1_l_b_model_a86f401fee7322d5b026bb40ad4b2b84b}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_ac0c33c0e119934319c188d385bbc5db5}{
+void {\bfseries setField} (const Real $\ast$value)}
+\label{classvoom_1_1_l_b_model_ac0c33c0e119934319c188d385bbc5db5}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a169a46c3f6333795817a5772746488f7}{
+void {\bfseries getField} (vector$<$ double $>$ \&x)}
+\label{classvoom_1_1_l_b_model_a169a46c3f6333795817a5772746488f7}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a712027658695b2ea2dd36497a0cf2823}{
+void {\bfseries setPrevField} ()}
+\label{classvoom_1_1_l_b_model_a712027658695b2ea2dd36497a0cf2823}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_aaadb7e6c835a1a8a5fadae3ca896803e}{
+void {\bfseries printField} ()}
+\label{classvoom_1_1_l_b_model_aaadb7e6c835a1a8a5fadae3ca896803e}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a23d034aa85bdd55e20a2b149f30de1e4}{
+void {\bfseries writeField} (string FileName)}
+\label{classvoom_1_1_l_b_model_a23d034aa85bdd55e20a2b149f30de1e4}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a7ff15504745f43ecb0f0272384a42297}{
+uint \hyperlink{classvoom_1_1_l_b_model_a7ff15504745f43ecb0f0272384a42297}{getNumMat} ()}
+\label{classvoom_1_1_l_b_model_a7ff15504745f43ecb0f0272384a42297}
+
+\begin{DoxyCompactList}\small\item\em Return number of unique material pointers. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a8249ae1f3e5b36914315b8b30c0262a1}{
+uint {\bfseries getTotNumMatProp} ()}
+\label{classvoom_1_1_l_b_model_a8249ae1f3e5b36914315b8b30c0262a1}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a95ec220bc582a7ef720fabfb3e645eb1}{
+vector$<$ \hyperlink{classvoom_1_1_landau_brazovskii}{LandauBrazovskii} $\ast$ $>$ {\bfseries getMaterials} ()}
+\label{classvoom_1_1_l_b_model_a95ec220bc582a7ef720fabfb3e645eb1}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a7578f02f8b7cf51a8deacb7537d30dc2}{
+void \hyperlink{classvoom_1_1_l_b_model_a7578f02f8b7cf51a8deacb7537d30dc2}{writeOutputVTK} (const string OutputFile, int step)}
+\label{classvoom_1_1_l_b_model_a7578f02f8b7cf51a8deacb7537d30dc2}
+
+\begin{DoxyCompactList}\small\item\em Write output. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a11632c9eb952c92b771ecddba72e9ba2}{
+int {\bfseries getNumberOfIrrelevantNodes} ()}
+\label{classvoom_1_1_l_b_model_a11632c9eb952c92b771ecddba72e9ba2}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_adf89f36be8192b2a03b1f6471fb41288}{
+void \hyperlink{classvoom_1_1_l_b_model_adf89f36be8192b2a03b1f6471fb41288}{compute} (\hyperlink{structvoom_1_1_elliptic_result}{EllipticResult} \&R)}
+\label{classvoom_1_1_l_b_model_adf89f36be8192b2a03b1f6471fb41288}
+
+\begin{DoxyCompactList}\small\item\em Solve the system. \item\end{DoxyCompactList}\item 
+\hypertarget{classvoom_1_1_l_b_model_a38bb84e4e37d45ce0e89faaa6cc86f92}{
+void {\bfseries setImplicitDynamicsFlag} (bool flag)}
+\label{classvoom_1_1_l_b_model_a38bb84e4e37d45ce0e89faaa6cc86f92}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_l_b_model_ad620e7538265eb031a1a121ca71c4415}{
+void \hyperlink{classvoom_1_1_l_b_model_ad620e7538265eb031a1a121ca71c4415}{computeGradients} (vector$<$ \hyperlink{classvoom_1_1_shell_geometry}{ShellGeometry} $>$ defGeomVec, \hyperlink{classvoom_1_1_geom_element}{GeomElement} $\ast$geomEl)}
+\label{classvoom_1_1_l_b_model_ad620e7538265eb031a1a121ca71c4415}
+
+\begin{DoxyCompactList}\small\item\em Compute Gradients. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a7bb53d098be6d2d501b8b9c7914f07d6}{
+vector$<$ \hyperlink{classvoom_1_1_landau_brazovskii}{LandauBrazovskii} $\ast$ $>$ \hyperlink{classvoom_1_1_l_b_model_a7bb53d098be6d2d501b8b9c7914f07d6}{\_\-materials}}
+\label{classvoom_1_1_l_b_model_a7bb53d098be6d2d501b8b9c7914f07d6}
+
+\begin{DoxyCompactList}\small\item\em List of Material data at each element in the model. \item\end{DoxyCompactList}\item 
+vector$<$ Real $>$ \hyperlink{classvoom_1_1_l_b_model_a4e7d5fadb92531299a2fe25ec76b7efa}{\_\-field}
+\item 
+\hypertarget{classvoom_1_1_l_b_model_abd5b0f6b7648c6589af6be1ef22511b1}{
+vector$<$ Real $>$ {\bfseries \_\-prevField}}
+\label{classvoom_1_1_l_b_model_abd5b0f6b7648c6589af6be1ef22511b1}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a9f293a1060431d52513787cc678b0671}{
+bool {\bfseries \_\-implicitDynamics}}
+\label{classvoom_1_1_l_b_model_a9f293a1060431d52513787cc678b0671}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a1af5210c59870e1d2c6c64e3ecbccd71}{
+map$<$ int, int $>$ {\bfseries ghostBC1}}
+\label{classvoom_1_1_l_b_model_a1af5210c59870e1d2c6c64e3ecbccd71}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a23a92bcc8ddbef00c966e47730ca9ba6}{
+map$<$ int, int $>$ {\bfseries ghostBC2}}
+\label{classvoom_1_1_l_b_model_a23a92bcc8ddbef00c966e47730ca9ba6}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_aecdd431508ba47aa4ef6660ff3a0a466}{
+map$<$ int, int $>$ {\bfseries Boundary}}
+\label{classvoom_1_1_l_b_model_aecdd431508ba47aa4ef6660ff3a0a466}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_ad07bb023cdfd8184b646d5f91ce33dc5}{
+int {\bfseries \_\-NoOfGhostFaces}}
+\label{classvoom_1_1_l_b_model_ad07bb023cdfd8184b646d5f91ce33dc5}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a01d5acb594b05e97344ee448b7dc8ca1}{
+int {\bfseries \_\-NoOfGhostNodes}}
+\label{classvoom_1_1_l_b_model_a01d5acb594b05e97344ee448b7dc8ca1}
+
+\item 
+\hypertarget{classvoom_1_1_l_b_model_a626a8562947e31e8de293f59ea98bb34}{
+int {\bfseries \_\-NoOfIrrelevantNodes}}
+\label{classvoom_1_1_l_b_model_a626a8562947e31e8de293f59ea98bb34}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classvoom_1_1_l_b_model_a4e7d5fadb92531299a2fe25ec76b7efa}{
+\index{voom::LBModel@{voom::LBModel}!\_\-field@{\_\-field}}
+\index{\_\-field@{\_\-field}!voom::LBModel@{voom::LBModel}}
+\subsubsection[{\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Real $>$ {\bf voom::LBModel::\_\-field}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classvoom_1_1_l_b_model_a4e7d5fadb92531299a2fe25ec76b7efa}
+Solution value at all nodes, local and ghost Displacement are stored unrolled, \mbox{[}phi\_\-x, phi\_\-y, phi\_\-z\mbox{]} 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/u/home/s/sanjaydm/voom2/src/Model/LBModel.h\item 
+/u/home/s/sanjaydm/voom2/src/Model/LBModel.cc\end{DoxyCompactItemize}

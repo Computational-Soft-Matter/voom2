@@ -1,0 +1,5 @@
+\form#0:\[ \frac{\partial N(\xi)}{\partial \xi_i} \approx \frac{ N(\xi + \Delta \xi_i) - N(\xi - \Delta \xi_i) }{2\Delta \xi_i} \]
+\form#1:$L_2$
+\form#2:\[ \frac{du_i}{dt} = a_i(V^n) + b_i(V^m)u_i \]
+\form#3:\[ \frac{d}{dt} State[i] = f( State[0],.. State[k]) \]
+\form#4:\[ State^{n+1}[i] - State^n[i] - \Delta t * f() = 0 \]
