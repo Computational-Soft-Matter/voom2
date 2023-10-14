@@ -11,8 +11,8 @@
 *~
 *.swp
 ./configure
-./doc/html/*
-./doc/latex/*
+doc/html/*
+doc/latex/*
 ./install-sh
 ./missing
 ./depcomp
