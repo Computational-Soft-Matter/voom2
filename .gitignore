@@ -2,7 +2,6 @@
 *.vtk
 *.o
 *.deps
-*.in
 *.a
 *Makefile
 *.cmd
@@ -10,7 +9,6 @@
 *.joblog.*
 *~
 *.swp
-./configure
 doc/html/*
 doc/latex/*
 ./install-sh
